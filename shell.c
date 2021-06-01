@@ -13,7 +13,7 @@ void shell()
         }
 
         if (!StrCmp(L"hello", command)) {
-            Print(L"Hello UEFI!\r\n");
+            Print(L"Salut!\r\n");
         } else if (!StrCmp(L"rect", command)) {
             rect();
         } else if( !StrCmp(L"time", command) ) {
@@ -39,5 +39,7 @@ void time() {
 }
 
 void help() {
-    Print(L"Functie help\r\n");
+    Print(L"Comanda ------------------------------ Descriere \r\n\n\n");
+    Print(L"hello ------------------------------ Afiseaza pe ecran mesajul 'Salut!' \r\n");
+    Print(L"rect ------------------------------Afiseaza pe ecran un dreptunghi \r\n");
 }

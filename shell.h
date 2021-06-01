@@ -9,5 +9,7 @@
 
 void shell();
 void rect();
+void time();
+void help();
 
 #endif
